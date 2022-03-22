@@ -15,12 +15,12 @@ function TaskContainer({ task }) {
   }
   return (
     <div
-      className="flex items-center justify-between bg-slate-100 rounded shadow-md p-8 mb-8"
+      className="flex flex-col items-center justify-between bg-slate-100 rounded shadow-md p-8 my-4 md:flex-row "
       key={task.id}
     >
-      <div>
-        <h1>{task.title}</h1>
-        <h2>{task.description}</h2>
+      <div className="text-center md:text-left">
+        <h1 className="text-xl">{task.title}</h1>
+        <h2 className="text-l pt-2 pb-4">{task.description}</h2>
       </div>
       <div>
         <button
